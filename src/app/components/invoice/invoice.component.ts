@@ -9,7 +9,7 @@ import { RowItemComponent } from '../row-item/row-item.component';
 
 @Component({
   selector: 'app-invoice',
-  imports: [InvoiceViewComponent, ClientViewComponent, CompanyViewComponent, ListItemsComponent, RowItemComponent],
+  imports: [InvoiceViewComponent, ClientViewComponent, CompanyViewComponent, ListItemsComponent],
   templateUrl: './invoice.component.html'
 })
 export class InvoiceComponent implements OnInit {

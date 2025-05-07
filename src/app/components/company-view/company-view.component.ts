@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Company } from '../../models/company';
 
 @Component({
-  selector: 'app-company-view',
+  selector: 'company-view',
   imports: [],
   templateUrl: './company-view.component.html'
 })
 export class CompanyViewComponent {
+
+  @Input() company: Company = new Company();
+  // @Input() company: Company = {name: 'Empresa falsa', fiscalNumber: 10000};
 
 }
